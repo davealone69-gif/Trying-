@@ -1,0 +1,6 @@
+{
+  "name": "Mandela Matrix OS",
+  "description": "Cyber-brutalist mutation engine, APK build auditor, and reality shift control matrix powered by Devator, MatrixCore, and Evaluateor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

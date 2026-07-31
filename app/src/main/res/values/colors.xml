@@ -1,0 +1,8 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="neon_cyan">#00FFCC</color>
+    <color name="neon_magenta">#FF0055</color>
+    <color name="matrix_green">#00FF66</color>
+    <color name="bg_dark">#050811</color>
+</resources>
