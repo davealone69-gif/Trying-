@@ -20,6 +20,16 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            // Use the automatic debug keystore so the release APK is signed and installable
+            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -28,10 +38,11 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
         debug {
             isMinifyEnabled = false
-            debuggable = true
+            isDebuggable = true
             applicationIdSuffix = ".debug"
         }
     }
